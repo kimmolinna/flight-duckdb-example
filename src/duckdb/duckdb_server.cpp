@@ -198,7 +198,7 @@ arrow::Result<std::unique_ptr<FlightDataStream>> DuckDBFlightSqlServer::DoGetTab
   return impl_->DoGetTables(context, command);
 }
 
-}  // namespace sqlite
+}  // namespace duckdbflight
 }  // namespace sql
 }  // namespace flight
 }  // namespace arrow

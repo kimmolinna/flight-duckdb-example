@@ -20,7 +20,7 @@ if [ ! -d "build/release" ]; then
 fi
 
 # copy libraries to include and lib paths
-cp build/release/src/libduckdb.so $CONDA_PREFIX/lib/
-cp src/include/duckdb.h $CONDA_PREFIX/include/
-cp src/include/duckdb.hpp $CONDA_PREFIX/include/
-cp -R src/include/duckdb $CONDA_PREFIX/include/
+cp build/release/src/libduckdb.so /usr/local/lib/
+cp src/include/duckdb.h /usr/local/include/
+cp src/include/duckdb.hpp /usr/local/include/
+cp -R src/include/duckdb /usr/local/include/

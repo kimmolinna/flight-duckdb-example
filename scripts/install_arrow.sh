@@ -14,14 +14,12 @@ if [ ! -d "arrow" ]; then
 fi
 
 cd arrow
-mamba install -c conda-forge -y --file ci/conda_env_cpp.txt
-mamba install -c conda-forge -y compilers
 cd cpp && mkdir -p build && cd build && rm -rf *
-cmake .. -GNinja -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX \
+cmake .. -GNinja \
     -DARROW_FLIGHT=ON \
     -DARROW_FLIGHT_SQL=ON \
     -DARROW_JSON=ON \
     -DARROW_PARQUET=ON \
     -DARROW_CSV=ON \
     -DARROW_WITH_SNAPPY=ON
-ninja install # Will install into your Conda prefix
+ninja install # Will install into your local folder

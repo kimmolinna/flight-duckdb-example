@@ -18,7 +18,7 @@ fi
 cp ../data/TPC-H-small.db .
 
 # move the data to DuckDB
-$CONDA_PREFIX/bin/python ../scripts/move_data_to_duckdb.py 
+python3 ../scripts/move_data_to_duckdb.py 
 
 # and push the new DB to data folder
 cp TPC-H-small.duckdb ../data/
