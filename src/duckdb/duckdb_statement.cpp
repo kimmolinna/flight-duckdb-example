@@ -20,7 +20,7 @@
 #include <duckdb.h>
 #include <iostream>
 
-#include <boost/algorithm/string.hpp>
+//#include <boost/algorithm/string.hpp>
 
 #include <arrow/flight/sql/column_metadata.h>
 #include <arrow/c/bridge.h>
